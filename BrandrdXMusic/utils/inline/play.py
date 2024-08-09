@@ -96,7 +96,9 @@ def stream_markup(_, videoid, chat_id):
                 text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/lolpagalokigc"
             ),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text="๏ ғᴇᴀᴛᴜʀᴇs ๏",
+                callback_data=f"MainMarkup {videoid}|{chat_id}"),
+        ],
     ]
     return buttons
 
